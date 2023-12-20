@@ -4,38 +4,38 @@ module.exports = {
 		es2021: true,
 	},
 	extends: [
-		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:react/recommended",
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:react/recommended',
 	],
 	overrides: [
 		{
 			env: {
 				node: true,
 			},
-			files: [".eslintrc.{js,cjs}"],
+			files: ['.eslintrc.{js,cjs}'],
 			parserOptions: {
-				sourceType: "script",
+				sourceType: 'script',
 			},
 		},
 	],
-	parser: "@typescript-eslint/parser",
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		ecmaVersion: "latest",
-		sourceType: "module",
+		ecmaVersion: 'latest',
+		sourceType: 'module',
 	},
-	plugins: ["@typescript-eslint", "react"],
+	plugins: ['@typescript-eslint', 'react'],
 	rules: {
-		"react/react-in-jsx-scope": 0,
-		"react/prefer-stateless-function": 0,
-		"react/jsx-filename-extension": 0,
-		"react/jsx-one-expression-per-line": 0,
-		"no-nested-ternary": 0,
-		"react/function-component-definition": [
+		'react/react-in-jsx-scope': 0,
+		'react/prefer-stateless-function': 0,
+		'react/jsx-filename-extension': 0,
+		'react/jsx-one-expression-per-line': 0,
+		'no-nested-ternary': 0,
+		'react/function-component-definition': [
 			2,
 			{
-				namedComponents: "arrow-function",
-				unnamedComponents: "arrow-function",
+				namedComponents: 'arrow-function',
+				unnamedComponents: 'arrow-function',
 			},
 		],
 	},
