@@ -33,10 +33,7 @@ module.exports = {
 		'no-nested-ternary': 0,
 		'react/function-component-definition': [
 			2,
-			{
-				namedComponents: 'arrow-function',
-				unnamedComponents: 'arrow-function',
-			},
+			{ namedComponents: ['arrow-function', 'function-declaration'] },
 		],
 	},
 };
